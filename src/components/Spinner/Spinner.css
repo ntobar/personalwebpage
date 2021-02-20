@@ -1,0 +1,109 @@
+.spinner_container {
+    height: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    margin:20px 0; 
+
+}
+
+
+.description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0,0,0,0.6);
+    background-color: #F06449;
+    color: #1F5673;
+    font-weight:900;
+    border: 2px solid black;
+    min-width: 400px;
+    min-height: 60px;
+
+
+    /* padding: 10px; */
+    /* font-size:0.6em; */
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+   
+}
+
+
+
+p {
+    color: #fff;
+    font-family: Avenir Next, Helvetica Neue, Helvetica, Tahoma, sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    margin: 0px;
+  }
+  p span {
+    display: inline-block;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 500;
+    -webkit-font-smoothing: antialiased;
+  }
+  p span::before,
+  p span::after {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -1px;
+    transform-origin: left top;
+    transition: all ease-out 0.3s;
+    content: attr(data-text);
+  }
+  p span::before {
+    z-index: 1;
+    color: rgba(0,0,0,0.2);
+    transform: scale(1.1, 1) skew(0deg, 20deg);
+  }
+  p span::after {
+    z-index: 2;
+    color: #684da3;
+    color: #F06449;
+    text-shadow: -1px 0 1px #684da3, 1px 0 1px rgba(0,0,0,0.8);
+    text-shadow: -1px 0 1px #F06449, 1px 0 1px rgba(0,0,0,0.8);
+    transform: rotateY(-40deg);
+  }
+  p span:hover::before {
+    transform: scale(1.1, 1) skew(0deg, 5deg);
+  }
+  p span:hover::after {
+    transform: rotateY(-10deg);
+  }
+  p span + span {
+    margin-left: 0.3em;
+  }
+  @media (min-width: 20em) {
+    p {
+      font-size: 2em;
+      font-size: 0.5em;
+    }
+    p span::before,
+    p span::after {
+      display: block;
+    }
+  }
+  @media (min-width: 30em) {
+    p {
+      font-size: 3em;
+      font-size: 1em;
+    }
+  }
+  @media (min-width: 40em) {
+    p {
+      font-size: 5em;
+      font-size: 2em;
+    }
+  }
+  @media (min-width: 60em) {
+    p {
+      font-size: 8em;
+      font-size: 6em;
+    }
+  }
+
