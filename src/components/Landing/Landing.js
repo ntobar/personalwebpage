@@ -7,9 +7,11 @@ import Particles from "react-particles-js";
 function Landing() {
     return (
 
-        
+       
 
         <div className="outer_container">
+             
+   
 
             {/* Container for Spinner */}
 
@@ -29,9 +31,12 @@ function Landing() {
                 </div>
 
 
+         
             
             
         </div>
+
+   
     )
 }
 

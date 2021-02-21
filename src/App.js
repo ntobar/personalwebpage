@@ -1,12 +1,15 @@
 
 import './App.css';
 import Landing from "./components/Landing/Landing";
+import Preview from "./components/Projects/Preview";
 
 function App() {
   return (
     <div className="App">
 
-      <Landing />
+      <Preview />
+
+      {/* <Landing /> */}
 
 
     </div>

@@ -9,6 +9,7 @@ import styles from "react-responsive-carousel/lib/styles/carousel.min.css"; // r
 import { Carousel } from 'react-responsive-carousel';
 import Particles from "react-particles-js";
 
+
 function About() {
     return (
         <div className="first_container">
