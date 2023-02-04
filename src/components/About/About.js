@@ -1,9 +1,6 @@
 import React from 'react'
 import "./About.css"
 import SurfPic from "../../assets/surf1.jpg";
-import mypic1 from "../../assets/myimg1.jpg";
-import myimg2 from "../../assets/myimg2.jpg";
-import myimg from "../../assets/profile_picture.jpg";
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import styles from "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
